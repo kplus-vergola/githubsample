@@ -1,0 +1,20 @@
+name: Try GitHub Actions
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: [self-hosted, sample-runner]
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Deploy Application
+        run: |
+          cd C:/xampp/htdocs/githubsample
+
+          git pull origin staging
