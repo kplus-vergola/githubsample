@@ -7,7 +7,7 @@ on:
 
 jobs:
   deploy:
-    runs-on: [self-hosted, sample-runner]
+    runs-on: [self-hosted, sample-runner-2]
 
     steps:
       - name: Checkout Repository
@@ -15,6 +15,6 @@ jobs:
 
       - name: Deploy Application
         run: |
-          cd F:\Projects\githubsample
+          cd C:\Projects\githubsample
 
           git pull origin main
