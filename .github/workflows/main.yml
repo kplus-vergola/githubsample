@@ -10,6 +10,11 @@ jobs:
     runs-on: [self-hosted, githubsample-runner-staging]
 
     steps:
+      - name: Configure Git
+        run: |
+          git config --global user.email "vergola.github@knowdgeplus.net.au"
+          git config --global user.name "kplus-vergola"
+    
       - name: Deploy Application
         run: |
           cd C:/Users/Jezmahboi/Projects/githubsample
