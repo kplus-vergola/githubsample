@@ -7,7 +7,7 @@ on:
 
 jobs:
   deploy:
-    runs-on: [self-hosted, sample-runner]
+    runs-on: [self-hosted, githubsample-runner-staging]
 
     steps:
       - name: Deploy Application
