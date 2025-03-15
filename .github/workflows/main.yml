@@ -10,11 +10,8 @@ jobs:
     runs-on: [self-hosted, sample-runner]
 
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v3
-
       - name: Deploy Application
         run: |
-          cd C:\Projects\githubsample
+          cd C:Users\Jezmahboi\Projects\githubsample
 
           git pull origin main
